@@ -151,7 +151,7 @@ background-image: url(~/assets/images/hoge.png);
 ***
 
 ## デバッグ方法
-Chrome DevToolsを利用
-(Chrome DevTools の使い方)[https://murashun.jp/article/performance/chrome-devtools.html]
+Chrome DevToolsを利用  
+[Chrome DevTools の使い方](https://murashun.jp/article/performance/chrome-devtools.html)
 
 ***
