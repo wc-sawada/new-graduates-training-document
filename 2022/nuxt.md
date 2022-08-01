@@ -94,8 +94,11 @@ git init
 // 以下のようにアップロードします。
 git add .
 git commit -m "first commit"
+git branch -M main
 git remote add origin [https or ssh でのリンク]
 git push -u origin main
 ```
+
+※git initで作られたブランチはデフォルトがmasterになっているのでmainに変更している
 
 4. 完了です。お疲れ様でした！
