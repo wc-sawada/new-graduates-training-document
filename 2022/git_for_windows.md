@@ -1,6 +1,6 @@
 ## Git for Windows
 
-1. 公式からインストローラーをダウンロード  
+1. 公式からインストーラーをダウンロード  
 [【公式】 Git for Windows](https://gitforwindows.org/)
 
 2. 以下記事の手順に沿って進める。基本デフォルトのまま  
