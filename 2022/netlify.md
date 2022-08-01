@@ -1,6 +1,6 @@
 ## Netlify
 
-1. 公式からアカウント作成、GitHubでSing upできる  
+1. 公式からアカウント作成、GitHubでSign upできる  
 [【公式】 Netlify](https://www.netlify.com/)
 
 2. アカウントの作成が終わったら、右上の「New site from Git」より新しくプロジェクトの追加
