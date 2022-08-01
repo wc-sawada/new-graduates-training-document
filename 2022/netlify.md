@@ -1,6 +1,6 @@
 ## Netlify
 
-1. 公式からアカウント作成、GitHubでSing upできる
+1. 公式からアカウント作成、GitHubでSing upできる  
 [【公式】 Netlify](https://www.netlify.com/)
 
 2. アカウントの作成が終わったら、右上の「New site from Git」より新しくプロジェクトの追加
@@ -26,11 +26,6 @@ Publish directory : dist
 
 8. 完了です。お疲れ様でした！
 
-* 導入分かりやすい記事  
-https://bagelee.com/design/netlify/about-neflify/
-
-* 公式Nuxt.jsのNetlify  
-https://develop365.gitlab.io/nuxtjs-2.8.X-doc/ja/faq/netlify-deployment/  
-
-* Nuxt.js + Netlifyで爆速構築するサーバーレス開発入門  
-https://qiita.com/isihigameKoudai/items/e3b136e9964f1d30d73d
+* [導入分かりやすい記事](https://bagelee.com/design/netlify/about-neflify/)
+* [公式Nuxt.jsのNetlify](https://develop365.gitlab.io/nuxtjs-2.8.X-doc/ja/faq/netlify-deployment/)
+* [Nuxt.js + Netlifyで爆速構築するサーバーレス開発入門](https://qiita.com/isihigameKoudai/items/e3b136e9964f1d30d73d)

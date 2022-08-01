@@ -10,8 +10,7 @@ https://github.com/coreybutler/nvm-windows/releases
 nvm install 16.14.2
 ```
 
-* Node.jsのバージョン  
-https://nodejs.org/ja/download/releases/
+[Node.jsのバージョン](https://nodejs.org/ja/download/releases/)  
 
 4. 以下コマンドを実行し、インストールされているか確認
 
@@ -34,6 +33,5 @@ nvm use 16.14.2
 node -v
 v16.14.2
 ```
-4. 完了です。お疲れ様でした！
-* 導入分かりやすい記事  
-https://helog.jp/development/nvm-windows/
+4. 完了です。お疲れ様でした！  
+[導入分かりやすい記事](https://helog.jp/development/nvm-windows/)  
