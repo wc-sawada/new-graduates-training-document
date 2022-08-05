@@ -21,7 +21,7 @@
 
 ## HTML
 * コーディング場所  
-以下ファイルにコーディングします！  
+以下ファイルにコーディング  
 `pages/index.vue`
 
 ```
@@ -80,6 +80,7 @@ https://nuxtjs.org/ja/docs/directory-structure/layouts/
 [ブロック/インライン要素、実体参照](https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_comments)  
 [コンテンツの構造化](https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)　
 
+***
 ## CSS
 * 英語で付ける(ローマ字できればNG)
 
@@ -118,10 +119,56 @@ ex)
 
 CSSの命名規則には色んな種類がありcss設計というものがありますが、  
 [css設計](https://www.northdetail.co.jp/blog/1953/)  
-そんなのもあるんだな〜くらいでOK
+今回は、そんなのもあるんだな〜くらいでOK
 
 ***
 
+## ページ単位のCSS
+
+```
+<template>
+  <div >
+    ...
+  </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+<style scoped>
+  div{
+    color: red;
+  }
+</style>
+```
+
+`scoped`プロパティを`style`要素に付与することで、CSS記述が該当の.vueファイル内でのみ有効になる
+
+***
+## グローバルなCSS
+
+`assets`配下にcssディレクトリを作成
+
+```
+ex)
+
+assets/css/common.css
+```
+
+作成したファイルをnuxt.config.jsのcssセクションで読み込む
+
+```
+module.exports = {
+  // ...
+  css: [
+    "~assets/scss/common.css"
+  ],
+}
+```
+
+***
 ## 画像
 * 格納場所  
 assets/images/ディレクトリを作成  
