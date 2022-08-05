@@ -48,9 +48,9 @@ export default {
 
 * ヘッダーとフッター記述場所  
 layoutsディレクトリ作成し、default.vue作成  
-`layouts/default.vue`  
 https://nuxtjs.org/ja/docs/directory-structure/layouts/
 
+`layouts/default.vue`
 ```vue:layouts/default.vue
 <template>
   <div>
@@ -160,8 +160,8 @@ ex)
 assets/css/common.css
 ```
 
-作成したファイルをnuxt.config.jsのcssセクションで読み込む
-
+作成したファイルをnuxt.config.jsのcssセクションで読み込む  
+`nuxt.config.js`
 ```javascript:pages/nuxt.config.js
 module.exports = {
   // ...
@@ -178,8 +178,7 @@ assets/images/ディレクトリを作成
 `assets/images/配下`
 
 * 命名  
-コンテンツ名_要素名
-
+`コンテンツ名_要素名`
 ```
 ex)
 about_title.png
@@ -208,7 +207,7 @@ Chrome DevToolsを利用
 
 ## 外部ファイルを読み込みたいとき
 
-
+`nuxt.config.js`
 ```javascript:pages/nuxt.config.js
 export default {
   head: {
@@ -228,14 +227,12 @@ export default {
 
 @nuxtjs/google-fontsというNuxt.jsモジュールを利用
 
-
+ターミナルにて
 ```
-ターミナル
-
 npm i --save-dev @nuxtjs/google-fonts
-
 ```
 
+`nuxt.config.js`
 ```javascript:pages/nuxt.config.js
 export default {
 ・・・
