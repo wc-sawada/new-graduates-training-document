@@ -6,6 +6,8 @@ https://github.com/coreybutler/nvm-windows/releases
 
 3. インストール後、コマンドプロンプトを開き、以下コマンドを実行
 
+*※管理者権限でコマンドプロンプトを起動しないと動かないことが多いので要注意*
+
 ```
 nvm install 16.14.2
 ```

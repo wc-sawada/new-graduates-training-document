@@ -1,9 +1,11 @@
 ## Netlify
 
 1. 公式からアカウント作成、GitHubでSign upできる  
-[【公式】 Netlify](https://www.netlify.com/)
+[【公式】 Netlify](https://www.netlify.com/)  
 
-2. アカウントの作成が終わったら、右上の「New site from Git」より新しくプロジェクトの追加
+Tell us about yourselfの設問については適当
+
+2. アカウントの作成が終わったら、「Import from Git」より新しくプロジェクトの追加
 
 3. GitHubを選択
 
@@ -16,10 +18,11 @@
 6. Basic build settings
 
 ```
-Build command : nuxt generate
+Base directory : Not set
+
+Build command : npm run generate
 
 Publish directory : dist
-
 ```
 
 7. 「Deploy site」のボタンを押下

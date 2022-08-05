@@ -68,7 +68,7 @@ npm run dev
 http://localhost:3000/
 
 
-5. GitHubへアクセスしリポジトリを作成する
+5. GitHubへアクセスしリポジトリを作成する  
 https://github.com/
 
 [この記事](https://qiita.com/_mamezou_/items/8f3711eb64c4bb2c51f6#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E4%BD%9C%E6%88%90)が分かりやすい
@@ -99,6 +99,6 @@ git remote add origin [https or ssh でのリンク]
 git push -u origin main
 ```
 
-※git initで作られたブランチはデフォルトがmasterになっているのでmainに変更している
-
+*※git initで作られたブランチはデフォルトがmasterになっているのでmainに変更している*  
+*※Gitコマンドで連携できなかったら、リポジトリクローンしてそのまま手作業でソース移動…*
 4. 完了です。お疲れ様でした！
