@@ -155,3 +155,68 @@ Chrome DevToolsを利用
 [Chrome DevTools の使い方](https://murashun.jp/article/performance/chrome-devtools.html)
 
 ***
+
+## 外部ファイルを読み込みたいとき
+
+
+```
+nuxt.config.js
+
+export default {
+  head: {
+    link: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' }
+    ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js' }
+    ]
+  }
+}
+
+```
+
+***
+
+## Googleフォントを使いたいとき
+
+@nuxtjs/google-fontsというNuxt.jsモジュールを利用
+
+
+```
+ターミナル
+
+npm i --save-dev @nuxtjs/google-fonts
+
+```
+
+```
+nuxt.config.js
+
+export default {
+・・・
+  buildModules: [
+    '@nuxtjs/google-fonts' //追加
+  ],
+  googleFonts: {
+    families: {
+      Roboto: [100, 400, 500, 700] //読み込みたいGoogle　Fontsを指定
+    }
+  },
+・・・
+}
+
+```
+
+
+```
+css
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+```
+
+参照：[Nuxt.jsに@nuxtjs/google-fontsを使ってGoogle Fonts（Webフォント）を設定する方法](https://qiita.com/TK-C/items/4a50d0dba3fa7a084eb1)
+
+***
