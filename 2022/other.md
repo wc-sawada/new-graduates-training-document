@@ -15,7 +15,7 @@
 * レスポンシブデザインとは
 1つのHTMLで配信し、スマホ、タブレット、パソコンごとに、CSS（画像の大きさやレイアウトなど表示の指定）を用意して表示を変更させる方法  
 
-[参照 メリット・デメリットとかも記載されてる](https://digitalidentity.co.jp/blog/creative/dynamic-serving.html)
+参照： [ダイナミックサービングとは？レスポンシブWebデザインとの違いを解説！](https://digitalidentity.co.jp/blog/creative/dynamic-serving.html)
 
 ***
 
@@ -24,7 +24,7 @@
 以下ファイルにコーディング  
 `pages/index.vue`
 
-```
+```vue:pages/index.vue
 <template>
   <Tutorial/>
 </template>
@@ -36,9 +36,9 @@ export default {
 </script>
 ```
 
-↓
+↓ 書き換える
 
-```
+```vue:pages/index.vue
 <template>
   <main>
     〜ココに書いていく〜
@@ -51,7 +51,7 @@ layoutsディレクトリ作成し、default.vue作成
 `layouts/default.vue`  
 https://nuxtjs.org/ja/docs/directory-structure/layouts/
 
-```
+```vue:layouts/default.vue
 <template>
   <div>
     ～ヘッダー記述～
@@ -66,7 +66,7 @@ https://nuxtjs.org/ja/docs/directory-structure/layouts/
 
 インデントは*2スペース*
 
-```
+```vue:pages/index.vue
 <template>
   <main>
     <h1>タイトルです </h1>
@@ -108,6 +108,7 @@ ex)
 
 ```
 ex)
+
 <header class="header">
   <img class"header-logo" scr="">
   <ul class="header-list">
@@ -126,6 +127,8 @@ CSSの命名規則には色んな種類がありcss設計というものがあ�
 ## ページ単位のCSS
 
 ```
+ex)
+
 <template>
   <div >
     ...
@@ -159,7 +162,7 @@ assets/css/common.css
 
 作成したファイルをnuxt.config.jsのcssセクションで読み込む
 
-```
+```javascript:pages/nuxt.config.js
 module.exports = {
   // ...
   css: [
@@ -206,9 +209,7 @@ Chrome DevToolsを利用
 ## 外部ファイルを読み込みたいとき
 
 
-```
-nuxt.config.js
-
+```javascript:pages/nuxt.config.js
 export default {
   head: {
     link: [
@@ -219,7 +220,6 @@ export default {
     ]
   }
 }
-
 ```
 
 ***
@@ -236,9 +236,7 @@ npm i --save-dev @nuxtjs/google-fonts
 
 ```
 
-```
-nuxt.config.js
-
+```javascript:pages/nuxt.config.js
 export default {
 ・・・
   buildModules: [
@@ -254,14 +252,10 @@ export default {
 
 ```
 
-
-```
-css
-
+```css
 body {
   font-family: "Roboto", sans-serif;
 }
-
 ```
 
 参照：[Nuxt.jsに@nuxtjs/google-fontsを使ってGoogle Fonts（Webフォント）を設定する方法](https://qiita.com/TK-C/items/4a50d0dba3fa7a084eb1)
